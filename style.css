@@ -1,20 +1,28 @@
 body {
     background-color: #f8f9fa;
 }
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 canvas {
     border: 2px solid #343a40;
     display: block;
     margin: 20px auto;
     background-color: #ffffff;
 }
-.container {
-    max-width: 600px;
+
+#inputs-section, #extra-tools {
+    background-color: #e9ecef;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    margin-bottom: 30px;
-    color: #343a40;
+
+.card-header {
+    text-align: center;
 }
+
 .btn {
-    width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
 }

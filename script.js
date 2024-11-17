@@ -113,3 +113,16 @@ document.getElementById('generovat').addEventListener('click', () => {
 });
 
 document.getElementById('resit').addEventListener('click', resitBludiste);
+
+document.getElementById('reset').addEventListener('click', () => {
+    ctx.clearRect(0, 0, platno.width, platno.height);
+    alert('Bludiště bylo resetováno.');
+});
+
+document.getElementById('ulozit').addEventListener('click', () => {
+    const dataUrl = platno.toDataURL();
+    const link = document.createElement('a');
+    link.href = dataUrl;
+    link.download = 'bludiste.png';
+    link.click();
+});
